@@ -132,3 +132,41 @@ Test:[Value] - [http://localhost:40080/taxonomy_term/7795]
 ```
 <skos:ConceptScheme rdf:about="http://localhost:40080/taxonomy_term/7795" />
 ```
+
+### Value does not have _Shape_
+
+```
+Value does not have shape :DateOrDateTimeDataType_Shape
+Location:[Focus node] - [http://localhost:40080/content/2001] - [Result path] - [http://purl.org/dc/terms/issued]
+```
+
+These type of violations tell us that a node does not conform to a _shape_. A SHACL _shape_ defines which properties must appear and in which quantity.
+
+In this particular case the validator reports that the value of property `<http://purl.org/dc/terms/issued>` must conform to `DateOrDateTimeDataType_Shape`. However, it is currently a literal:
+
+```
+<ns2:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal"></ns2:issued>
+```
+
+To check the shape definition we must search in the [BRegDCAT SHACL shapes file](https://github.com/ISAITB/validator-resources-bregdcat-ap/blob/master/resources/v2.00/BRegDCAT-AP_shacl_shapes_2.00.ttl) for the shape ID (`DateOrDateTimeDataType_Shape`):
+
+```
+:DateOrDateTimeDataType_Shape
+    a sh:NodeShape ;
+    rdfs:comment "Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal" ;
+    rdfs:label "Date time date disjunction" ;
+    sh:message "The values must be data typed as either xsd:date or xsd:dateTime" ;
+    sh:or ([
+            sh:datatype xsd:date
+        ]
+        [
+            sh:datatype xsd:dateTime
+        ]
+    ) .
+```
+
+In this case we need to replace the entry for `<ns2:issued>` for something similar to:
+
+```
+<ns2:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T08:52:52+01:00</ns2:issued>
+```

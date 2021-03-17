@@ -207,7 +207,7 @@
         <ns2:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Register of Schools of Chalkidiki</ns2:title>
         <ns2:spatial rdf:resource="http://localhost:40080/content/15001" />
         <ns2:publisher rdf:resource="http://localhost:40080/content/1001" />
-        <ns2:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal"></ns2:issued>
+        <ns2:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T08:52:52+01:00</ns2:issued>
         <ns5:themeTaxonomy rdf:resource="http://localhost:40080/taxonomy_term/7795" />
         <ns2:identifier>register-data-catalogue-of-schools-of-secondary-education-of-the-regional-unit-of-chalkidiki</ns2:identifier>
     </rdf:Description>
