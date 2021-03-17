@@ -12,3 +12,7 @@ The reader should have a basic grasp of the concepts of linked data. The followi
 - **RDF/XML**: One of the existing _RDF serialization formats_, that is, a specification that defines how to write RDF data to a file using XML.
 - **Turtle**: Another _RDF serialization format_ that is usually less verbose than XML and easier to read for humans.
 - **SHACL**: RDF enables us, for instance, to define that a _Person_ has a _name_, but does not provide means to _constrain_ RDF graphs (e.g. a _Person_ must have exactly one _name_). SHACL is an specification that was created to fill this gap. SHACL files are also written using a _RDF serialization format_. For example, [these two RDF files in Turtle format](https://github.com/ISAITB/validator-resources-bregdcat-ap/tree/master/resources/v2.00) are the SHACL constraints used by the BRegDCAT validator.
+
+So what happens when a RDF dataset is uploaded to the BRegDCAT validator? The following diagram shows a simplified view of this process.
+
+![Validation process diagram](images/validator.png "Validation process diagram")
