@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ns2="http://purl.org/dc/terms/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:ns5="http://www.w3.org/ns/dcat#"
+    xmlns:ns6="http://purl.org/rss/1.0/modules/content/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:ns8="http://www.w3.org/ns/org#">
+    <rdf:Description rdf:about="http://localhost:40080/content/000001">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T08:58:26+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T09:06:44+01:00</ns2:modified>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T08:59:54+01:00</ns2:modified>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T08:58:26+01:00</ns2:modified>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Junior High School</foaf:name>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Junior High School of Polygyros</foaf:name>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">School</foaf:name>
+        <foaf:name>000001</foaf:name>
+        <ns2:Type rdf:resource="http://localhost:40080/taxonomy_term/128" />
+        <ns2:Type rdf:resource="http://localhost:40080/taxonomy_term/175" />
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T08:58:26+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/100001">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T08:58:26+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T09:34:20+01:00</ns2:modified>
+        <foaf:name>100001</foaf:name>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Junior High School of Polygyros</foaf:name>
+        <ns2:Type rdf:resource="http://localhost:40080/taxonomy_term/128" />
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T08:58:26+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sioc:num_replies>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/600001">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T09:45:21+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T09:45:21+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T09:45:21+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns2:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dataset of Schools of Secondary Education in the region of Chalkidiki</ns2:description>
+        <ns5:keyword rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schools, Secondary Education</ns5:keyword>
+        <ns5:theme rdf:resource="http://localhost:40080/taxonomy_term/7795" />
+        <ns2:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schools of Secondary Education</ns2:title>
+        <ns2:title>600001</ns2:title>
+        <ns2:identifier>dataset-of-schools-of-secondary-education-in-the-region-of-chalkidiki</ns2:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/200001">
+        <rdf:type rdf:resource="http://data.europa.eu/cv/PublicOrganization" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T10:42:50+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:33:11+01:00</ns2:modified>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:24:21+01:00</ns2:modified>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T08:10:37+01:00</ns2:modified>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T10:42:50+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T10:42:50+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns2:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Directorate of Secondary Education of Chalkidiki</ns2:title>
+        <ns2:title>20.0001</ns2:title>
+        <ns6:encoded>&lt;p&gt;A Public Organisation is the responsible Agent for the delivery of a Public Service.&lt;/p&gt;</ns6:encoded>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Διεύθυνση Δευτεροβάθμιας Εκπαίδευσης Χαλκιδικής</skos:prefLabel>
+        <ns8:classification rdf:resource="http://localhost:40080/taxonomy_term/136" />
+        <ns2:spatial rdf:resource="http://localhost:40080/content/150001" />
+        <ns2:spatial rdf:resource="http://localhost:40080/content/httppublicationseuropaeuresourceauthorityatugrcpechalkidi" />
+        <foaf:homepage rdf:resource="http://localhost:40080/content/httpdidechalschgrportal4" />
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/150001">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Location" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:22:54+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:22:54+01:00</ns2:modified>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T08:13:21+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:22:54+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns6:encoded>&lt;p&gt;&amp;lt;p&amp;gt;A location indicates a spatial region or named place.&amp;lt;/p&amp;gt;&lt;/p&gt;</ns6:encoded>
+        <ns5:box rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">westlimit=22.81; southlimit=39.64; eastlimit=24.57; northlimit=40.7</ns5:box>
+        <ns5:centroid rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Polygyros</ns5:centroid>
+        <ns2:identifier>15.0001</ns2:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/httppublicationseuropaeuresourceauthorityatugrcpechalkidi">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Location" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:22:54+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:29:09+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:22:54+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns6:encoded>&lt;p&gt;&amp;lt;p&amp;gt;A location indicates a spatial region or named place.&amp;lt;/p&amp;gt;&lt;/p&gt;</ns6:encoded>
+        <ns5:box rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">westlimit=22.81; southlimit=39.64; eastlimit=24.57; northlimit=40.7</ns5:box>
+        <ns5:centroid rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Polygyros</ns5:centroid>
+        <ns2:identifier>http://publications.europa.eu/resource/authority/atu/GRC_PE_CHALKIDI</ns2:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/dse-chalkidiki">
+        <rdf:type rdf:resource="http://data.europa.eu/cv/PublicOrganization" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T10:42:50+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:36:11+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T10:42:50+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns2:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Directorate of Secondary Education of Chalkidiki</ns2:title>
+        <ns2:title>DSE Chalkidiki</ns2:title>
+        <ns6:encoded>&lt;p&gt;A Public Organisation is the responsible Agent for the delivery of a Public Service.&lt;/p&gt;</ns6:encoded>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Διεύθυνση Δευτεροβάθμιας Εκπαίδευσης Χαλκιδικής</skos:prefLabel>
+        <ns8:classification rdf:resource="http://localhost:40080/taxonomy_term/136" />
+        <ns2:spatial rdf:resource="http://localhost:40080/content/httppublicationseuropaeuresourceauthorityatugrcpechalkidi" />
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/dde-chalkidiki">
+        <rdf:type rdf:resource="http://data.europa.eu/cv/PublicOrganization" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T10:42:50+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:36:44+01:00</ns2:modified>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:51:47+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T10:42:50+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns2:title>DDE Chalkidiki</ns2:title>
+        <ns2:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Directorate of Secondary Education of Chalkidiki</ns2:title>
+        <ns6:encoded>&lt;p&gt;A Public Organisation is the responsible Agent for the delivery of a Public Service.&lt;/p&gt;</ns6:encoded>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Διεύθυνση Δευτεροβάθμιας Εκπαίδευσης Χαλκιδικής</skos:prefLabel>
+        <ns8:classification rdf:resource="http://localhost:40080/taxonomy_term/136" />
+        <ns2:spatial rdf:resource="http://localhost:40080/content/httppublicationseuropaeuresourceauthorityatugrcpechalkidi" />
+        <foaf:homepage rdf:resource="http://localhost:40080/content/httpdidechalschgrportal4" />
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/httpdidechalschgrportal4">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:44:55+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:44:55+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:44:55+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns2:title>http://dide.chal.sch.gr/portal4/</ns2:title>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/6001">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T09:45:21+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T09:45:15+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T09:45:21+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns2:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dataset of Schools of Secondary Education in the region of Chalkidiki</ns2:description>
+        <ns2:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dataset of Schools of Secondary Education of the regional unit of Chalkidiki</ns2:description>
+        <ns5:keyword rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schools, Secondary Education</ns5:keyword>
+        <ns5:keyword rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schools, Secondary Education, Chalkidiki</ns5:keyword>
+        <ns5:theme rdf:resource="http://localhost:40080/taxonomy_term/7795" />
+        <ns2:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schools of Secondary Education of Chalkidiki</ns2:title>
+        <ns2:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schools of Secondary Education</ns2:title>
+        <ns2:title>6.001</ns2:title>
+        <ns2:spatial rdf:resource="http://localhost:40080/content/15001" />
+        <ns2:publisher rdf:resource="http://localhost:40080/content/1001" />
+        <ns2:identifier>dataset-of-schools-of-secondary-education-of-the-regional-unit-of-chalkidiki</ns2:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/1001">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T08:58:26+01:00</ns2:created>
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T09:06:43+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T08:14:52+01:00</ns2:modified>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T09:06:43+01:00</ns2:modified>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Junior High School of Polygyros</foaf:name>
+        <foaf:name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Directorate of Secondary Education of Chalkidiki</foaf:name>
+        <foaf:name>1.001</foaf:name>
+        <ns2:Type rdf:resource="http://localhost:40080/taxonomy_term/128" />
+        <ns2:Type rdf:resource="http://localhost:40080/taxonomy_term/136" />
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T09:06:43+01:00</ns2:date>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T08:58:26+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sioc:num_replies>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/20001">
+        <rdf:type rdf:resource="http://data.europa.eu/cv/PublicOrganization" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T10:42:50+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T08:15:05+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T10:42:50+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns2:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Directorate of Secondary Education of Chalkidiki</ns2:title>
+        <ns2:title>20.001</ns2:title>
+        <ns6:encoded>&lt;p&gt;A Public Organisation is the responsible Agent for the delivery of a Public Service.&lt;/p&gt;</ns6:encoded>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Διεύθυνση Δευτεροβάθμιας Εκπαίδευσης Χαλκιδικής</skos:prefLabel>
+        <ns8:classification rdf:resource="http://localhost:40080/taxonomy_term/136" />
+        <ns2:spatial rdf:resource="http://localhost:40080/content/150001" />
+        <foaf:homepage rdf:resource="http://localhost:40080/content/httpdidechalschgrportal4" />
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/15001">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Location" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:22:54+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T08:17:45+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:22:54+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns6:encoded>&lt;p&gt;&amp;lt;p&amp;gt;A location indicates a spatial region or named place.&amp;lt;/p&amp;gt;&lt;/p&gt;</ns6:encoded>
+        <ns5:box rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">westlimit=22.81; southlimit=39.64; eastlimit=24.57; northlimit=40.7</ns5:box>
+        <ns5:centroid rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Polygyros</ns5:centroid>
+        <ns2:identifier>15.001</ns2:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/6001-0">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:44:55+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T08:19:56+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:44:55+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns2:title>6.001</ns2:title>
+        <ns6:encoded>&lt;p&gt;&lt;a href=&quot;http://dide.chal.sch.gr/portal4/&quot;&gt;http://dide.chal.sch.gr/portal4/&lt;/a&gt;&lt;/p&gt;</ns6:encoded>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/2001">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T08:52:52+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T09:36:01+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T08:52:52+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns2:description>Register (Data Catalogue) of Schools of Secondary Education of Chalkidiki</ns2:description>
+        <ns2:description>Register (Data Catalogue) of Schools of the regional unit of Chalkidiki</ns2:description>
+        <ns2:description>Register (Data Catalogue) of Schools of Secondary Education of the regional unit of Chalkidiki</ns2:description>
+        <ns2:description>Register (Data Catalogue) of Schools of secondary education of Chalkidiki</ns2:description>
+        <ns2:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Register of Schools</ns2:title>
+        <ns2:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Register of Schools of Secondary Education of Chalkidiki</ns2:title>
+        <ns2:title>2.001</ns2:title>
+        <ns2:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Register of Schools of Chalkidiki</ns2:title>
+        <ns2:spatial rdf:resource="http://localhost:40080/content/15001" />
+        <ns2:publisher rdf:resource="http://localhost:40080/content/1001" />
+        <ns2:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal"></ns2:issued>
+        <ns5:themeTaxonomy rdf:resource="http://localhost:40080/taxonomy_term/7795" />
+        <ns2:identifier>register-data-catalogue-of-schools-of-secondary-education-of-the-regional-unit-of-chalkidiki</ns2:identifier>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:40080/content/8001">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document" />
+        <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:44:55+01:00</ns2:created>
+        <ns2:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T09:30:10+01:00</ns2:modified>
+        <ns2:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-16T11:44:55+01:00</ns2:date>
+        <sioc:num_replies rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sioc:num_replies>
+        <ns2:title>8.001</ns2:title>
+        <ns6:encoded>&lt;p&gt;&lt;a href=&quot;http://dide.chal.sch.gr/portal4/&quot;&gt;http://dide.chal.sch.gr/portal4/&lt;/a&gt;&lt;/p&gt;</ns6:encoded>
+    </rdf:Description>
+</rdf:RDF>

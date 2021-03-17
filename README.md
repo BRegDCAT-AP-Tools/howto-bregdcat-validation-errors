@@ -30,3 +30,52 @@ Value does not have shape _:3738359295e3d3041c81688d133ede8b
 ```
 
 In this case we have to actually look at the SHACL constraints to identify what the error is about. We will see an example in the next section.
+
+## Examples
+
+This section presents the errors reported by the BRegDCAT Validator for the file `original_with_errors.xml` and explicitly shows the process to fix them. Hopefully, this will enable the readers to extrapolate to similar errors in other RDF files.
+
+File `fixed_errors.xml` contains the changes (i.e. the validator does not report any errors for this file).
+
+### Invalid number of property values
+
+```
+Property needs to have at least 1 values, but found 0
+Location:[Focus node] - [http://localhost:40080/content/6001] - [Result path] - [http://purl.org/dc/terms/identifier]
+```
+
+This error is due to the fact that the node (i.e. _subject_) `<http://localhost:40080/content/6001>` lacks the property (i.e. _predicate_) `<http://purl.org/dc/terms/identifier>`.
+
+If we look at the node in the file, we can see that is indeed the case. Please note that in [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-node-property-elements) node properties are defined as children of `<rdf:Description>` where `rdf:about` is equal to the IRI of the node. Thus, we simply need to add `<ns2:identifier>` with a literal value that serves as unique identifier of the dataset.
+
+```
+<rdf:Description rdf:about="http://localhost:40080/content/6001">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
+    ...
+    <ns2:identifier>dataset-of-schools-of-secondary-education-of-the-regional-unit-of-chalkidiki</ns2:identifier>
+</rdf:Description>
+```
+
+There are two more errors that can be fixed in the same fashion:
+
+```
+Property needs to have at least 1 values, but found 0
+Location:[Focus node] - [http://localhost:40080/content/2001] - [Result path] - [http://purl.org/dc/terms/identifier]
+```
+
+```
+Property needs to have at least 1 values, but found 0
+Location:[Focus node] - [http://localhost:40080/content/600001] - [Result path] - [http://purl.org/dc/terms/identifier]
+```
+
+Unlike the previous errors, the following two violations require us to delete existing triples instead of adding them. In this particular case we need to keep only one item for property `<http://purl.org/dc/terms/modified>` for both nodes `<http://localhost:40080/content/2001>` and `<http://localhost:40080/content/6001>`.
+
+```
+Property may only have 1 value, but found 8
+Location:[Focus node] - [http://localhost:40080/content/2001] - [Result path] - [http://purl.org/dc/terms/modified]
+```
+
+```
+Property may only have 1 value, but found 4
+Location:[Focus node] - [http://localhost:40080/content/6001] - [Result path] - [http://purl.org/dc/terms/modified]
+```
