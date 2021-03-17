@@ -16,3 +16,17 @@ The reader should have a basic grasp of the concepts of linked data. The followi
 So what happens when a RDF dataset is uploaded to the BRegDCAT validator? The following diagram shows a simplified view of this process.
 
 ![Validation process diagram](images/validator.png "Validation process diagram")
+
+## Anatomy of a validation error
+
+The following image shows the distinct parts of a validation error item as shown by the BRegDCAT Validator UI:
+
+![Anatomy of a validation error](images/anatomy.png "Anatomy of a validation error")
+
+Please note that there are instances where the _descriptive name_ is a bit obscure and does not provide any valuable information:
+
+```
+Value does not have shape _:3738359295e3d3041c81688d133ede8b
+```
+
+In this case we have to actually look at the SHACL constraints to identify what the error is about. We will see an example in the next section.
