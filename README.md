@@ -29,7 +29,7 @@ Please note that there are instances where the _descriptive name_ is a bit obscu
 Value does not have shape _:3738359295e3d3041c81688d133ede8b
 ```
 
-In this case we have to actually look at the SHACL constraints to identify what the error is about. We will see an example in the next section.
+In this case we have to actually look at the SHACL constraints to identify what the error is about.
 
 ## Examples
 
