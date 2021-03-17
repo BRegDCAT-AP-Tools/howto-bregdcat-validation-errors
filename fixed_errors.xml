@@ -220,4 +220,9 @@
         <ns2:title>8.001</ns2:title>
         <ns6:encoded>&lt;p&gt;&lt;a href=&quot;http://dide.chal.sch.gr/portal4/&quot;&gt;http://dide.chal.sch.gr/portal4/&lt;/a&gt;&lt;/p&gt;</ns6:encoded>
     </rdf:Description>
+    <skos:Concept rdf:about="http://localhost:40080/taxonomy_term/7795">
+        <ns2:title>Theme title</ns2:title>
+        <skos:prefLabel>Theme preferred label</skos:prefLabel>
+    </skos:Concept>
+    <skos:ConceptScheme rdf:about="http://localhost:40080/taxonomy_term/7795" />
 </rdf:RDF>

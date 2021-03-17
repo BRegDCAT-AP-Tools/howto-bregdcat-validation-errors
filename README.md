@@ -33,6 +33,8 @@ In this case we have to actually look at the SHACL constraints to identify what 
 
 ## Examples
 
+> It should be noted that we focus entirely on fixing the validation issues reported by the validator tool. However, it could be argued that the resulting dataset is not strictly valid. For example, node `<http://localhost:40080/taxonomy_term/7795>` ends up being an instance of both `<skos:Concept>` and `<skos:ConceptScheme>` at the same time. Further updates could be required, but are outside of the scope of this post.
+
 This section presents the errors reported by the BRegDCAT Validator for the file `original_with_errors.xml` and explicitly shows the process to fix them. Hopefully, this will enable the readers to extrapolate to similar errors in other RDF files.
 
 File `fixed_errors.xml` contains the changes (i.e. the validator does not report any errors for this file).
@@ -78,4 +80,55 @@ Location:[Focus node] - [http://localhost:40080/content/2001] - [Result path] - 
 ```
 Property may only have 1 value, but found 4
 Location:[Focus node] - [http://localhost:40080/content/6001] - [Result path] - [http://purl.org/dc/terms/modified]
+```
+
+### Value must be an instance of _Class_
+
+The following two violations refer to the same issue, that is, the fact that node `<http://localhost:40080/taxonomy_term/7795>` is not a `<skos:Concept>`:
+
+```
+Value must be an instance of skos:Concept
+Location:[Focus node] - [http://localhost:40080/content/600001] - [Result path] - [http://www.w3.org/ns/dcat#theme]
+Test:[Value] - [http://localhost:40080/taxonomy_term/7795]
+```
+
+```
+Value must be an instance of skos:Concept
+Location:[Focus node] - [http://localhost:40080/content/6001] - [Result path] - [http://www.w3.org/ns/dcat#theme]
+Test:[Value] - [http://localhost:40080/taxonomy_term/7795]
+```
+
+Both `<http://localhost:40080/content/600001>` and `<http://localhost:40080/content/6001>` contain the following statement:
+
+```
+<ns5:theme rdf:resource="http://localhost:40080/taxonomy_term/7795" />
+```
+
+What this means is that the value of property `<ns5:theme>` is a node (`<http://localhost:40080/taxonomy_term/7795>`) instead of a literal.
+
+To fix this issue we need to explicitly state that node `<http://localhost:40080/taxonomy_term/7795>` is a `<skos:Concept>` by adding the following content to the root node (`<rdf:RDF>`).
+
+> Please note that an instance of `<skos:Concept>` requires both properties `<ns2:title>` and `<skos:prefLabel>`. You can check this by removing these properties and uploading the resulting file to the validator.
+
+```
+<skos:Concept rdf:about="http://localhost:40080/taxonomy_term/7795">
+    <ns2:title>Theme title</ns2:title>
+    <skos:prefLabel>Theme preferred label</skos:prefLabel>
+</skos:Concept>
+```
+
+The process to fix the next error violation is very similar:
+
+- Add an entry to the root node (`<rdf:RDF>`) stating that `<http://localhost:40080/taxonomy_term/7795>` is a `<skos:ConceptScheme>`.
+- Upload the file to the validator to see if an instance of `<skos:ConceptScheme>` has obligatory fields.
+- The validator reports no further errors related to `ConceptScheme`.
+
+```
+Value must be an instance of skos:ConceptScheme
+Location:[Focus node] - [http://localhost:40080/content/2001] - [Result path] - [http://www.w3.org/ns/dcat#themeTaxonomy]
+Test:[Value] - [http://localhost:40080/taxonomy_term/7795]
+```
+
+```
+<skos:ConceptScheme rdf:about="http://localhost:40080/taxonomy_term/7795" />
 ```
