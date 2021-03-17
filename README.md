@@ -48,7 +48,7 @@ Location:[Focus node] - [http://localhost:40080/content/6001] - [Result path] - 
 
 This error is due to the fact that the node (i.e. _subject_) `<http://localhost:40080/content/6001>` lacks the property (i.e. _predicate_) `<http://purl.org/dc/terms/identifier>`.
 
-If we look at the node in the file, we can see that is indeed the case. Please note that in [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-node-property-elements) node properties are defined as children of `<rdf:Description>` where `rdf:about` is equal to the IRI of the node. Thus, we simply need to add `<ns2:identifier>` with a literal value that serves as unique identifier of the dataset.
+If we look at the node in the file, we can see that that is indeed the case. Please note that in [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-node-property-elements), node properties are defined as children of a `<rdf:Description>` XML element where XML attribute `rdf:about` is equal to the IRI of the node. Thus, we simply need to add `<ns2:identifier>` with a literal value that serves as unique identifier of the dataset.
 
 ```
 <rdf:Description rdf:about="http://localhost:40080/content/6001">
